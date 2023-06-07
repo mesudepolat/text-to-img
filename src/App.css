@@ -1,28 +1,70 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  font-family: 'Dancing Script', cursive;;
+  cursor: none;
+}
+
 .album-web {
   background: rgb(255, 251, 251);
   text-align: center;
+  
 }
 
 .page {
   box-shadow: 0 1.5em 3em -1em rgb(70, 69, 69);
+  background-color:rgb(195, 189, 211);
+  background-image: url("page.jpeg");
+  background-size:     100% 100%;                  
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
 
-.cover {
+.pad{
+  position: block;
+  color: #9f7ab1;
+  margin-top: 200px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .cover {
   background-color: rgb(174, 143, 200);
+  box-shadow: 0 1.5em 3em -1em rgb(70, 69, 69);
+} */
+
+.cover {
+  text-align: center;
+  text-size-adjust: 40px;
+  /* background-image: url("page.jpeg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 0 1.5em 3em -1em rgb(70, 69, 69);
 }
 
+body{
+  background-color: #9f7ab1;
+}
 
+/* .showcase {
+  height: 450px;
+  width: 100%;
+  background: #f39cd5;
+} */
 
 .showcase {
   height: 450px;
   width: 100%;
-  background: #f39cd5;
+  background-image: url("castle.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .showcase h1 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 3rem;
+  color: #e5e0ec;
   text-align: center;
   padding: 1rem 0;
 }
@@ -42,7 +84,7 @@ form select {
   width: 500px;
   max-width: 500px;
   padding: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #9180ab;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
@@ -52,9 +94,8 @@ form button {
   padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
-  background: #333;
-  color: #fff;
-  cursor: pointer;
+  background: #8e32a8;
+  color: #2f180f;
   margin-top: 20px;
 }
 
@@ -62,4 +103,28 @@ form button:hover {
   transform: scale(1.1);
 }
 
+.cursor-dot,
+.cursor-dot-outline{
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3 ease-in-out;
+}
+
+.cursor-dot{
+  width: 8px;
+  height: 8px;
+  background-color: #5e2795;
+}
+
+.cursor-dot-outline{
+  width: 40px;
+  height: 40px;
+  background-color: #7c2b92;
+
+}
 
